@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2></h2>
+  <script>
+
+    var a = 5;
+    var b = 10;
+    var c = 6;
+    var message = ""; 
+    var p = 0;
+    var ar ;
+    var cosA = 0;
+    var cosB = 0;
+    var cosC = 0;
+
+    if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && c + b > a) {
+      message = "Numerele formeaza un triunghi"; 
+      p = a + b + c;
+      sp = p / 2;
+      ar = Math.sqrt(sp * (sp - a) * (sp - b) * (sp - c));
+      cosA = Math.cos(a);
+      cosB = Math.cos(b);
+      cosC = Math.cos(c);
+    } else {
+      message = "Nu formeaza un triunghi!"; 
+    } 
+
+   document.writeln("Numerele sunt: " + a + ", " + b + ", " + c + ". <br>"); 
+   document.writeln(message); 
+   document.writeln("Perimetrul este: " + p + ".<br>");
+   document.writeln("Aria este: " + ar + ".<br>") ;
+   document.writeln("Cosinusul unghiului A este: " + cosA + ".<br>");
+   document.writeln("Cosinusul unghiului B este: " + cosB + ".<br>");
+   document.writeln("Cosinusul unghiului C este: " + cosC + ".<br>");
+
+  </script>
+</body>
+
+</html>
